@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuxion Cali TV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #2ecc71, #3498db);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .producto {
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .testimonio {
+      background: #ecf0f1;
+      border-left: 5px solid #2ecc71;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      font-style: italic;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+    }
+    .whatsapp-float i {
+      line-height: 60px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Fuxion Cali TV</h1>
+    <p>Fuxion cuida tu salud</p>
+  </header>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="IMG_20230906_193718947_PORTRAIT.jpg" alt="Prunex 1">
+        <h3>Prunex 1</h3>
+        <p>Sabor guindón. Apoya tu bienestar digestivo.</p>
+      </div>
+      <div class="producto">
+        <img src="IMG_20230906_193745297.jpg" alt="Gano+ Cappuccino">
+        <h3>Gano+ Cappuccino</h3>
+        <p>Energía y sistema inmune en una deliciosa bebida.</p>
+      </div>
+      <div class="producto">
+        <img src="IMG_20230906_193800176.jpg" alt="Flora Liv">
+        <h3>Flora Liv</h3>
+        <p>Granadilla, uchuva y prebióticos. Apoya tu flora intestinal.</p>
+      </div>
+      <div class="producto">
+        <h3>Thermo T3</h3>
+        <p>Control de peso con energía natural.</p>
+      </div>
+      <div class="producto">
+        <h3>Golden</h3>
+        <p>Antiinflamatorio natural con cúrcuma y jengibre.</p>
+      </div>
+      <div class="producto">
+        <h3>Liquid Fiber</h3>
+        <p>Fibra líquida que mejora tu digestión y bienestar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonio">
+      "Probé el Golden el cual me quitó el dolor en los codos a causa de una tendinitis."<br>
+      — Michael
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form action="mailto:angelicamvalenciac@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+    <p style="text-align:center; margin-top: 20px;">
+      También puedes escribirnos por <a href="https://wa.me/573224768472" target="_blank">WhatsApp: 322 476 8472</a>
+    </p>
+  </section>
+
+  <a href="https://wa.me/573224768472" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    &copy; 2025 Fuxion Cali TV. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
